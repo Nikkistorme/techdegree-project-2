@@ -1,0 +1,301 @@
+/* Base Layout */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: .75em;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 14px;
+}
+
+/* Base Styles */
+
+header,
+footer {
+  background-color: #F7F7F7;
+}
+
+footer {
+  border-top: 1px solid gray;
+  padding: 15px 15px;
+}
+
+footer li {
+  display: block;
+  font-weight: bolder;
+}
+
+h1 {
+  margin: 0;
+  font-weight: bolder;
+}
+
+h3 {
+  margin: 0;
+  font-weight: bolder;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+}
+
+img {
+  width: 100%;
+}
+
+.title {
+  color: orange;
+}
+
+/* Specific Styles */
+
+.name {
+  padding: 15px;
+}
+
+.main-nav {
+  list-style: none;
+  color: black;
+  font-weight: bolder;
+  padding-bottom: 40px;
+}
+
+.main-nav li {
+  background-color: white;
+  margin: 5px;
+  padding: 7px;
+  color: black;
+}
+
+.banner {
+  background-color: #F7F7F7;
+}
+
+.profile-image {
+  width: 200px;
+}
+
+.header-descript {
+  font-size: 1.25em;
+  color: gray;
+  padding: 0 20px 40px 20px;
+  line-height: 25px;
+}
+
+.portfolio-title {
+  font-weight: bolder;
+  margin: 35px;
+}
+
+.card {
+  display: inline-block;
+  padding: 15px;
+}
+
+.skills h3 {
+  padding: 50px;
+}
+
+.helmet,
+.cupping {
+  border-radius: 50%;
+}
+
+.contact {
+  background-color: #F7F7F7;
+  line-height: 25px;
+  padding: 40px 20px 40px 20px;
+}
+
+.contact h2 {
+  font-size: 15px;
+  color: gray;
+  font-weight: lighter;
+  margin-bottom:  0;
+}
+
+.footer-home,
+.footer-portfolio,
+.footer-contact,
+.footer-skills {
+  font-size: 15px;
+  display: none;
+}
+
+.footer-name {
+  font-size: 15px;
+  float: left;
+}
+
+.back-to-top {
+  font-size: 15px;
+  float: right;
+}
+
+/* ---- Float clearfix ---- */
+
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+
+/* ---- Media Queries ---- */
+
+@media (min-width: 768px) {
+
+  .name {
+    padding: 40px 0 20px 0;
+  }
+
+  .main-nav li {
+    background: none;
+    display: inline-block;
+  }
+
+  .profile-image {
+    margin-right: 50px;
+    width: 35%;
+    float: right;
+  }
+
+  .header-descript {
+    width: 58%;
+    text-align: left;
+    float: left;
+    font-size: 1.45em;
+    margin-top: 0;
+    padding-left: 50px;
+  }
+
+  .banner {
+    padding-bottom: 30px;
+  }
+
+  .card {
+    margin: 0;
+    display: inline-block;
+    width: 45%;
+  }
+
+  .calculator p {
+    margin: auto;
+    width: 80%;
+  }
+
+  .contact {
+    padding: 50px;
+  }
+
+  .contact h2 {
+    padding: 50px 30px 0 30px;
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .contact-info h2,
+  .contact-info li {
+    margin: 0;
+    padding: 25px 0 0 0;
+  }
+
+  footer ul {
+    padding-top: 10px;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  .footer-home,
+  .footer-portfolio,
+  .footer-contact,
+  .footer-skills {
+    padding: 0 10px 0 10px;
+    display: inline-block;
+    float: right;
+    font-size: 15px;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
+@media (min-width: 1024px) {
+
+  .name {
+    display: inline-block;
+    float: left;
+    padding: 50px 75px 0 75px;
+  }
+
+  .main-nav {
+    padding: 0;
+  }
+
+  .nav {
+    display: inline-block;
+    float: right;
+    padding: 35px 30px 30px 75px;
+    font-size: 15px;
+  }
+
+  .nav li {
+    margin: 15px;
+  }
+
+  .header-descript {
+    padding-left: 75px;
+  }
+
+  .card {
+    width: 31%;
+  }
+
+  .contact-info h2 {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  .emai-h2,
+  .email-li {
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact {
+    padding-bottom: 100px;
+  }
+
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+  }
+}
